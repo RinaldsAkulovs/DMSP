@@ -1,1 +1,2 @@
-# Digit-l-sM-zikasStraum-anasPlatforma
+# Digitālās mūzikas straumēšanas platforma.
+## DMSP
