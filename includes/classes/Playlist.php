@@ -9,7 +9,6 @@
 		public function __construct($con, $data){
 
 			if(!is_array($data)){
-				//Data is an id (string)
 				$query = mysqli_query($con, "SELECT * FROM playlists WHERE id='$data'");
 				$data = mysqli_fetch_array($query);
 			}

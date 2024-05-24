@@ -25,7 +25,7 @@
 
 		}
 
-		public function register($un, $fn, $ln, $em, $em2, $pw, $pw2) {
+		public function register($un, $fn, $ln, $em, $em2, $pw, $pw2,) {
 			$this->validateUsername($un);
 			$this->validateFirstName($fn);
 			$this->validateLastName($ln);
@@ -54,7 +54,7 @@
 			$profilePic = "assets/images/profile-pics/Arba";
 			$date = date("Y-m-d");
 
-			$result = mysqli_query($this->con, "INSERT INTO users VALUES ('', '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic')");
+			$result = mysqli_query($this->con, "INSERT INTO users VALUES ('', '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic', '$admin')");
 
 			return $result;
 
